@@ -1,0 +1,608 @@
+
+body {
+  font-family: "Mozilla Headline", sans-serif;
+    background-image: url("images/sea.bg.jpg");
+    height: 100%;
+      margin: 0;
+}
+
+/*background*/
+.hero-image {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(images/sea.bg.jpg);
+  height: 100%;
+  background-color: white;
+ background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100px;
+  width: 80px;
+top: 5%;
+left: 90%
+}
+
+.index-img {
+width: 350px;
+position: absolute;
+left: 15%;
+top: 10%;
+}
+
+.button {
+background-color: rgba(255, 255, 255, 0.4); /*60% opacity */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+position:absolute;
+top: 53.5%;
+left: 63.5%;
+}
+
+h4 {
+text-align: center;
+font-size: 20px;
+}
+
+.center {
+  text-align: center; /* center inline elements like checkboxes */
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.center input[type="checkbox"] {
+  margin: 10px auto; /* optional: space between them */
+}
+
+.center1 {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.button1 {
+background-color: rgba(0, 0, 0, 0.548); /*60% opacity */
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    margin: 0;
+}
+
+.terms-conditions {
+  background-color: white;
+    border-radius: 10px;
+}
+
+.hidden {
+  color: transparent;       /* text invisible */
+  transition: color 0.3s ease; /* smooth transition */
+  cursor: pointer;
+}
+
+.hidden:hover {
+  color: black;             /* text becomes visible on hover */
+  cursor: pointer;
+}
+
+
+ul h1 {
+font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: xx-large;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    border-radius: 10px;
+}
+
+/* 
+maybe don't include to make it easier to see which is a real button
+li a:hover {
+  background-color: #111;
+}
+*/
+
+li b:hover {
+  background-color: #2196F3;
+}
+
+li c:hover {
+  background-color: #2196F3;
+}
+
+li b {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    border-radius: 10px;
+}
+
+li c {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    border-radius: 10px;
+}
+
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.col-1 {
+  position: relative;
+  flex: 3;
+  padding: 20px;
+  color: white;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  font-family: "Audiowide", sans-serif;
+}
+
+p {
+  color: black;
+margin: 3rem;
+}
+
+.article-block {
+  margin: 1.5rem;
+  background: rgba(255, 255, 255, 0.877);
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+
+.col-2 {
+    position: relative;
+  flex: 1;
+  padding: 20px;
+  background: #2222229c;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  width: 400px;
+  z-index: 1;
+}
+
+/* Vertical line */
+.col-2::before {
+  content: "";
+  position: absolute;
+  top: 40;
+  bottom: 0;
+    height: 90%;
+  left: 10%;
+  width: 4px;
+  background: #2196F3;
+  z-index: 0;
+}
+
+p2 {
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+h3 {
+  color: black;
+}
+
+p1 {
+  color: black;
+}
+
+/* Timeline event block - aligned to the right of the vertical line */
+.timeline-event {
+  position: relative;
+  margin: 1rem 0;
+  width: 70%;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+
+  /* Align to the right of the vertical line */
+  left: 10%;
+  transform: translateX(15px); /* Push box slightly to the right */
+}
+
+/* Timeline event block - aligned to the right of the vertical line */
+.timeline-eventfake {
+  position: relative;
+  margin: 1rem 0;
+  width: 70%;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+
+  /* Align to the right of the vertical line */
+  left: 10%;
+  transform: translateX(15px); /* Push box slightly to the right */
+}
+
+.timeline-event:hover {
+  background-color: #2196F3;
+}
+
+/* Dot - aligned exactly on the center vertical line */
+.timeline-event::before {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: -40px; /* This should match the transform distance + half dot size */
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #2196F3;
+  border: 3px solid white;
+  z-index: 1;
+}
+
+
+/* Dot - aligned exactly on the center vertical line */
+.timeline-eventfake::before {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: -40px; /* This should match the transform distance + half dot size */
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #2196F3;
+  border: 3px solid white;
+  z-index: 1;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide all slides by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Next & Prev buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0,0,0,0.5);
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Dots */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .dot:hover {
+  background-color: #2196F3;
+}
+
+/* Fading animation */
+.fade {
+  animation: fadeEffect 0.8s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+video {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.quotes {
+  font-style: italic;
+  color: #555;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.tagline {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+figure {
+  margin: 20px auto;
+  text-align: center;
+ color: black;
+}
+
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-right: 25px solid #2196F3;
+	border-bottom: 12.5px solid transparent;
+  position: absolute;
+  left: 68%;
+top: 28.5%;
+}
+
+.triangle-right1 {
+	width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-right: 25px solid #2196F3;
+	border-bottom: 12.5px solid transparent;
+  position: absolute;
+  left: 68%;
+top: 25.5%;
+}
+
+.triangle-right2 {
+	width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-right: 25px solid #2196F3;
+	border-bottom: 12.5px solid transparent;
+  position: absolute;
+  left: 68%;
+top: 39.5%;
+}
+
+.triangle-right3 {
+	width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-right: 25px solid #2196F3;
+	border-bottom: 12.5px solid transparent;
+  position: absolute;
+  left: 68%;
+top: 49.5%;
+}
+
+.triangle-right4 {
+	width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-right: 25px solid #2196F3;
+	border-bottom: 12.5px solid transparent;
+  position: absolute;
+  left: 68%;
+top: 72%;
+}
+
+.triangle-right5 {
+	width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-right: 25px solid #2196F3;
+	border-bottom: 12.5px solid transparent;
+  position: absolute;
+  left: 68%;
+top: 90%;
+}
+
+.triangle-left1 {
+	width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-left: 25px solid #2196F3;
+	border-bottom: 12.5px solid transparent;
+    position: absolute;
+  left: 29.5%;
+top: 25.5%;
+}
+
+.triangle-left2 {
+	width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-left: 25px solid #2196F3;
+	border-bottom: 12.5px solid transparent;
+    position: absolute;
+  left: 29.5%;
+top: 42%;
+}
+
+.triangle-left3 {
+	width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-left: 25px solid #2196F3;
+	border-bottom: 12.5px solid transparent;
+    position: absolute;
+  left: 29.5%;
+top: 58.5%;
+}
+
+.triangle-left4 {
+	width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-left: 25px solid #2196F3;
+	border-bottom: 12.5px solid transparent;
+    position: absolute;
+  left: 29.5%;
+top: 70%;
+}
+
+.triangle-left5 {
+	width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-left: 25px solid #2196F3;
+	border-bottom: 12.5px solid transparent;
+    position: absolute;
+  left: 29.5%;
+top: 89.5%;
+}
+
+
+.right0 {
+  position: absolute;
+  left: 68%;
+  top: 27.2%;
+}
+
+.right1 {
+  position: absolute;
+  left: 68%;
+  top: 24%;
+}
+
+.right2 {
+  position: absolute;
+  left: 68%;
+  top: 38%;
+}
+
+.right3 {
+  position: absolute;
+  left: 68%;
+  top: 48%;
+}
+
+.right4 {
+  position: absolute;
+  left: 68%;
+  top: 70.7%;
+}
+
+.right5 {
+  position: absolute;
+  left: 68%;
+  top: 88.5%;
+}
+
+.left1 {
+  position: absolute;
+  left: 9%;
+  top: 24.1%;
+}
+
+.left2 {
+  position: absolute;
+  left: 10%;
+  top: 40.7%;
+}
+
+.left3 {
+  position: absolute;
+  left: 5%;
+  top: 57%;
+}
+
+.left4 {
+  position: absolute;
+  left: 5%;
+  top: 68.5%;
+}
+
+.left5 {
+  position: absolute;
+  left: 5%;
+  top: 88%;
+}
+
+.index-audio {
+  position:absolute;
+left: 18%;
+top: 79.5%;
+width:270px;
+height: 40px;
+opacity: 0;
+  cursor: pointer;
+}  
+
